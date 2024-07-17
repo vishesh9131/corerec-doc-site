@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>CoreRec</title>
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">    
+    <link rel="shortcut icon" href="favicon.ico">  
+    <link href='https://fonts.googleapis.com/css?family=Lato:300,400,300italic,400italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'> 
+    <!-- FontAwesome JS-->
+	<script defer src="assets/fontawesome/js/all.min.js"></script>
+    <!-- Global CSS -->
+    <link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.min.css">
+    <!-- Plugins CSS -->    
+    <link rel="stylesheet" href="assets/plugins/prism/prism.css">
+    <!-- Theme CSS -->  
+    <link id="theme-style" rel="stylesheet" href="assets/css/theme-3.css">
+    <!-- GitHub Button -->
+    <script async defer src="https://buttons.github.io/buttons.js"></script> 
+</head> 
+
+<body data-spy="scroll">
+	
+   
+
+    <!---//Facebook button code-->
+    <div id="fb-root"></div>
+    <script>(function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.0";
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
+    
+    <!-- ******HEADER****** --> 
+    <header id="header" class="header">                          
+        <nav id="main-nav" class="main-nav navbar navbar-expand-md">
+            <div class="container-fluid">
+            <a class="navbar-brand logo scrollto" href="#promo">
+                <span class="logo-title">CoreRec</span>
+            </a>
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-collapse"  aria-controls="navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button><!--//nav-toggle-->
+                       
+            <div class="navbar-collapse collapse" id="navbar-collapse">
+                <ul id="nav-menu" class="nav navbar-nav ms-md-auto">
+                    <li class="nav-item sr-only"><a class="nav-link scrollto" href="#promo">Home</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#features">Features</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#docs">Docs</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#license">License</a></li>                        
+                    <li class="nav-item last"><a class="nav-link scrollto" href="#contact">Contact</a></li>
+                </ul><!--//nav-->
+            </div><!--//navabr-collapse-->
+            </div>
+        </nav><!--//main-nav-->
+    </header><!--//header-->
+    
+    <!-- ******PROMO****** -->
+    <section id="promo" class="promo section offset-header">
+        <div class="container text-center">
+            <h2 class="title">Core<span class="highlight">Rec</span></h2>
+            <p class="intro">CoreRec excels in node recommendations, model training, and graph visualizations, making it the ultimate tool for data scientists and researchers.</p>
+            <div class="btns">
+                <a class="btn btn-cta-secondary" href="https://github.com/vishesh9131/CoreRec/tree/main/src/USECASES" target="_blank">Demo</a>
+                <a class="btn btn-cta-primary" href="https://github.com/vishesh9131/CoreRec" target="_blank">Download</a>
+            </div>
+            <ul class="meta list-inline">
+                <li class="list-inline-item"><a href="https://github.com/vishesh9131/CoreRec" target="_blank">View on GitHub</a></li>
+                <li class="list-inline-item"><a href="https://medium.com/@sciencely98/exploring-graph-analysis-and-recommendation-with-vishgraphs-and-corerec-51e696ee6e59" target="_blank">Full Documentation</a></li>
+                <li class="list-inline-item">Created by: <a href="https://www.linkedin.com/in/vishesh-yadav-aa7333192/" target="_blank">Vishesh Yadav</a></li>
+            </ul><!--//meta-->
+        </div><!--//container-->
+        <div class="social-media">
+            <div class="social-media-inner container text-center">
+                <ul class="list-inline mb-2">
+                    <li class="list-inline-item twitter-follow"><a href="https://x.com/vishesh_writes" class="twitter-follow-button" data-show-count="false">Follow @vishesh_writes</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+                    </li><!--//twitter-follow-->
+                    <li class="list-inline-item twitter-tweet">
+                        <a href="https://twitter.com/share" class="twitter-share-button" data-via="vishesh_writes" data-hashtags="graphs,recommendation,corerec">Tweet</a>
+    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+                    </li><!--//twitter-tweet-->
+                    <li class="list-inline-item facebook-like">
+                         <div class="fb-like" data-href="https://themes.3rdwavemedia.com/" data-layout="button_count" data-action="like" data-show-faces="false" data-share="false"></div>
+                    </li><!--//facebook-like-->
+                    <!--// Generate github buttons: https://github.com/mdo/github-buttons -->
+                    <li class="list-inline-item github-star">
+<a class="github-button" href="https://github.com/vishesh9131/CoreRec" data-icon="octicon-star" aria-label="Star vishesh9131/CoreRec on GitHub">Star</a></li>
+                    <li class="list-inline-item github-follow"><!-- Place this tag where you want the button to render. -->
+<a class="github-button" href="https://github.com/vishesh9131" aria-label="Follow @vishesh9131 on GitHub">Follow @vishesh9131</a></li>                   
+                </ul>
+            </div>
+        </div>
+    </section><!--//promo-->
+    
+    <!-- ******ABOUT****** --> 
+    <section id="about" class="about section">
+        <div class="container">
+            <h2 class="title text-center">CoreRec<span class="sub-tititle">ommendation Engine</span></h2>
+            <p class="intro text-center">CoreRec offers a robust recommendation system based on graph analysis. It can recommend similar nodes within a graph, aiding in various applications such as personalized recommendations in social networks or product recommendations in e-commerce platforms.</p>
+            <div class="row">
+                <div class="item col-lg-4 col-md-6 col-12">
+                    <div class="icon-holder"> 
+                        <i class="fa-solid fa-heart"></i>
+                    </div>
+                    <div class="content">
+                        <h3 class="sub-title">Advanced Graph Analysis</h3>
+                        <p>CoreRec provides cutting-edge tools for analyzing complex graph structures, making it ideal for data scientists and researchers.</p>
+                    </div><!--//content-->
+                </div><!--//item-->
+                <div class="item col-lg-4 col-md-6 col-12">
+                    <div class="icon-holder">
+                        <i class="fa-solid fa-clock"></i>
+                    </div>
+                    <div class="content">
+                        <h3 class="sub-title">Node Recommendation Engine</h3>
+                        <p>Utilize CoreRec's powerful engine to recommend similar nodes within a graph, enhancing user experience and engagement.</p>
+                    </div><!--//content-->
+                </div><!--//item-->
+                <div class="item col-lg-4 col-md-6 col-12">
+                    <div class="icon-holder">
+                        <i class="fa-solid fa-crosshairs"></i>
+                    </div>
+                    <div class="content">
+                        <h3 class="sub-title">Customizable Transformer Model</h3>
+                        <p>Define and train Transformer models tailored to your graph data with customizable parameters for optimal performance.</p>
+                    </div><!--//content-->
+                </div><!--//item-->            
+                <div class="item col-lg-4 col-md-6 col-12">
+                    <div class="icon-holder">
+                        <i class="fa-solid fa-mobile-alt"></i>
+                    </div>
+                    <div class="content">
+                        <h3 class="sub-title">PyTorch Dataset Integration</h3>
+                        <p>Seamlessly integrate graph data with PyTorch datasets, streamlining the model training process.</p>
+                    </div><!--//content-->
+                </div><!--//item-->                
+                <div class="item col-lg-4 col-md-6 col-12">
+                    <div class="icon-holder">
+                        <i class="fa-solid fa-code"></i>
+                    </div>
+                    <div class="content">
+                        <h3 class="sub-title">Flexible Model Training</h3>
+                        <p>Train your models with ease using CoreRec's flexible training functions, supporting various configurations.</p>
+                    </div><!--//content-->
+                </div><!--//item-->
+                <div class="item col-lg-4 col-md-6 col-12">
+                    <div class="icon-holder">
+                        <i class="fa-solid fa-coffee"></i>
+                    </div>
+                    <div class="content">
+                        <h3 class="sub-title">Accurate Recommendation Metrics</h3>
+                        <p>Measure the accuracy of your recommendations with robust metrics provided by CoreRec.</p>
+                    </div><!--//content-->
+                </div><!--//item-->
+                <div class="item col-lg-4 col-md-6 col-12">
+                    <div class="icon-holder">
+                        <i class="fa-solid fa-paint-brush"></i>
+                    </div>
+                    <div class="content">
+                        <h3 class="sub-title">2D Graph Visualizations</h3>
+                        <p>Create stunning 2D visualizations of your graphs, making data analysis more intuitive and insightful.</p>
+                    </div><!--//content-->
+                </div><!--//item-->
+                <div class="item col-lg-4 col-md-6 col-12">
+                    <div class="icon-holder">
+                        <i class="fa-solid fa-cube"></i>
+                    </div>
+                    <div class="content">
+                        <h3 class="sub-title">3D Graph Visualizations</h3>
+                        <p>Experience your graphs in 3D with customizable features, providing a deeper understanding of complex networks.</p>
+                    </div><!--//content-->
+                </div><!--//item-->               
+            </div><!--//row-->            
+        </div><!--//container-->
+    </section><!--//about-->
+    
+    <!-- ******FEATURES****** --> 
+    <section id="features" class="features section">
+        <div class="container text-center">
+            <h2 class="title">Features</h2>
+            <ul class="feature-list list-unstyled">
+                <li><i class="fa-solid fa-check"></i> Intelligent Node recommendation engine</li>
+                <li><i class="fa-solid fa-check"></i> Customizable Transformer model</li>
+                <li><i class="fa-solid fa-check"></i> Support Data Parallelism Processing</li>
+                <li><i class="fa-solid fa-check"></i> PyTorch dataset integration</li>
+                <li><i class="fa-solid fa-check"></i> 2D-3D Graph visualization</li>
+                <li><i class="fa-solid fa-check"></i> Cross-platform compatibility</li>
+                <li><i class="fa-solid fa-check"></i> Accurate recommendation metrics</li>
+            </ul>
+        </div><!--//container-->
+    </section><!--//features-->
+    
+    <!-- ******DOCS****** --> 
+    <section id="docs" class="docs section">
+        <div class="container">
+            <div class="docs-inner">
+                <h2 class="title text-center">Get Started</h2>            
+                <div class="block">
+                    <h3 class="sub-title text-center">Advanced Graph Analysis</h3>
+                    <p>CoreRec provides cutting-edge tools for analyzing complex graph structures. These tools are designed to help data scientists and researchers understand the intricate relationships within their data, enabling more informed decision-making and insights.</p>
+                    <div class="code-block">
+                        <pre><code class="language-python">
+import core_rec as cr
+graph = cr.load_graph("path/to/graph")
+analysis_results = cr.analyze_graph(graph)
+                        </code></pre>
+                    </div><!--//code-block-->
+                </div><!--//block-->
+                
+                <div class="block">
+                    <h3 class="sub-title text-center">Node Recommendation Engine</h3>
+                    <p>Utilize CoreRec's powerful engine to recommend similar nodes within a graph. This feature enhances user experience and engagement by providing personalized recommendations based on graph data.</p>
+                    <div class="code-block">
+                        <pre><code class="language-python">
+import core_rec as cr
+recommendations = cr.recommend_similar_nodes(graph, node_id)
+                        </code></pre>
+                    </div><!--//code-block-->
+                </div><!--//block-->
+                
+                <div class="block">
+                    <h3 class="sub-title text-center">Customizable Transformer Model</h3>
+                    <p>Define and train Transformer models tailored to your graph data with customizable parameters. This allows for optimal performance in various graph-related tasks such as node classification or link prediction.</p>
+                    <div class="code-block">
+                        <pre><code class="language-python">
+import core_rec as cr
+model = cr.GraphTransformer(num_layers=2, d_model=128, num_heads=4, d_feedforward=512, input_dim=10)
+                        </code></pre>
+                    </div><!--//code-block-->
+                </div><!--//block-->   
+                
+                <div class="block">
+                    <h3 class="sub-title text-center">PyTorch Dataset Integration</h3>
+                    <p>Seamlessly integrate graph data with PyTorch datasets, streamlining the model training process. This feature simplifies the preparation of graph data for machine learning tasks.</p>
+                    <div class="code-block">
+                        <pre><code class="language-python">
+import core_rec as cr
+dataset = cr.GraphDataset(adj_matrix)
+data_loader = DataLoader(dataset, batch_size=32, shuffle=True)
+                        </code></pre>
+                    </div><!--//code-block-->
+                </div><!--//block-->
+                
+                <div class="block">
+                    <h3 class="sub-title text-center">Flexible Model Training</h3>
+                    <p>Train your models with ease using CoreRec's flexible training functions. These functions support various configurations, making it easier to adapt to different training requirements.</p>
+                    <div class="code-block">
+                        <pre><code class="language-python">
+import core_rec as cr
+cr.train_model(model, data_loader, criterion, optimizer, num_epochs=10)
+                        </code></pre>
+                    </div><!--//code-block-->
+                </div><!--//block-->
+                
+                <div class="block">
+                    <h3 class="sub-title text-center">Accurate Recommendation Metrics</h3>
+                    <p>Measure the accuracy of your recommendations with robust metrics provided by CoreRec. This feature ensures that your recommendation system is performing optimally.</p>
+                    <div class="code-block">
+                        <pre><code class="language-python">
+import core_rec as cr
+accuracy = cr.aaj_accuracy(graph, node_index, recommended_indices)
+                        </code></pre>
+                    </div><!--//code-block-->
+                </div><!--//block-->
+                
+                <div class="block">
+                    <h3 class="sub-title text-center">2D Graph Visualizations</h3>
+                    <p>Create stunning 2D visualizations of your graphs, making data analysis more intuitive and insightful. This feature helps in better understanding the structure and relationships within the graph.</p>
+                    <div class="code-block">
+                        <pre><code class="language-python">
+import vish_graphs as vg
+vg.draw_graph(adj_matrix, nodes, top_nodes)
+                        </code></pre>
+                    </div><!--//code-block-->
+                </div><!--//block-->
+                
+                <div class="block">
+                    <h3 class="sub-title text-center">3D Graph Visualizations</h3>
+                    <p>Experience your graphs in 3D with customizable features, providing a deeper understanding of complex networks. This feature is particularly useful for visualizing large and intricate graph structures.</p>
+                    <div class="code-block">
+                        <pre><code class="language-python">
+import vish_graphs as vg
+vg.draw_graph_3d(adj_matrix, nodes, top_nodes)
+                        </code></pre>
+                    </div><!--//code-block-->
+                </div><!--//block-->
+                
+                <div class="block">
+                    <h3 class="sub-title text-center">Full Documentation</h3>
+                    <p>If your documentation is very long you can host the full docs page (including FAQ etc) on GitHub and provide a Call to Action button below to direct users there.</p>
+                    <p class="text-center">
+                        <a class="btn btn-cta-primary" href="https://github.com/vishesh9131/CoreRec" target="_blank">More on GitHub</a>
+                    </p>
+                </div><!--//block-->
+                
+            </div><!--//docs-inner-->         
+        </div><!--//container-->
+    </section><!--//docs-->
+    
+    <!-- ******LICENSE****** --> 
+    <section id="license" class="license section">
+        <div id="bg-wrap">
+            <svg viewBox="0 0 100 100" preserveAspectRatio="xMidYMid slice">
+                <defs>
+                    <radialGradient id="Gradient1" cx="50%" cy="50%" fx="0.441602%" fy="50%" r=".5">
+                        <animate attributeName="fx" dur="34s" values="0%;3%;0%" repeatCount="indefinite"></animate>
+                        <stop offset="0%" stop-color="rgba(255, 0, 255, 1)"></stop>
+                        <stop offset="100%" stop-color="rgba(255, 0, 255, 0)"></stop>
+                    </radialGradient>
+                    <radialGradient id="Gradient2" cx="50%" cy="50%" fx="2.68147%" fy="50%" r=".5">
+                        <animate attributeName="fx" dur="23.5s" values="0%;3%;0%" repeatCount="indefinite"></animate>
+                        <stop offset="0%" stop-color="rgba(255, 255, 0, 1)"></stop>
+                        <stop offset="100%" stop-color="rgba(255, 255, 0, 0)"></stop>
+                    </radialGradient>
+                    <radialGradient id="Gradient3" cx="50%" cy="50%" fx="0.836536%" fy="50%" r=".5">
+                        <animate attributeName="fx" dur="21.5s" values="0%;3%;0%" repeatCount="indefinite"></animate>
+                        <stop offset="0%" stop-color="rgba(0, 255, 255, 1)"></stop>
+                        <stop offset="100%" stop-color="rgba(0, 255, 255, 0)"></stop>
+                    </radialGradient>
+                    <radialGradient id="Gradient4" cx="50%" cy="50%" fx="4.56417%" fy="50%" r=".5">
+                        <animate attributeName="fx" dur="23s" values="0%;5%;0%" repeatCount="indefinite"></animate>
+                        <stop offset="0%" stop-color="rgba(0, 255, 0, 1)"></stop>
+                        <stop offset="100%" stop-color="rgba(0, 255, 0, 0)"></stop>
+                    </radialGradient>
+                    <radialGradient id="Gradient5" cx="50%" cy="50%" fx="2.65405%" fy="50%" r=".5">
+                        <animate attributeName="fx" dur="24.5s" values="0%;5%;0%" repeatCount="indefinite"></animate>
+                        <stop offset="0%" stop-color="rgba(0,0,255, 1)"></stop>
+                        <stop offset="100%" stop-color="rgba(0,0,255, 0)"></stop>
+                    </radialGradient>
+                    <radialGradient id="Gradient6" cx="50%" cy="50%" fx="0.981338%" fy="50%" r=".5">
+                        <animate attributeName="fx" dur="25.5s" values="0%;5%;0%" repeatCount="indefinite"></animate>
+                        <stop offset="0%" stop-color="rgba(255,0,0, 1)"></stop>
+                        <stop offset="100%" stop-color="rgba(255,0,0, 0)"></stop>
+                    </radialGradient>
+                </defs>
+                <rect x="13.744%" y="1.18473%" width="100%" height="100%" fill="url(#Gradient1)" transform="rotate(334.41 50 50)">
+                    <animate attributeName="x" dur="20s" values="25%;0%;25%" repeatCount="indefinite"></animate>
+                    <animate attributeName="y" dur="21s" values="0%;25%;0%" repeatCount="indefinite"></animate>
+                    <animateTransform attributeName="transform" type="rotate" from="0 50 50" to="360 50 50" dur="7s" repeatCount="indefinite"></animateTransform>
+                </rect>
+                <rect x="-2.17916%" y="35.4267%" width="100%" height="100%" fill="url(#Gradient2)" transform="rotate(255.072 50 50)">
+                    <animate attributeName="x" dur="23s" values="-25%;0%;-25%" repeatCount="indefinite"></animate>
+                    <animate attributeName="y" dur="24s" values="0%;50%;0%" repeatCount="indefinite"></animate>
+                    <animateTransform attributeName="transform" type="rotate" from="0 50 50" to="360 50 50" dur="12s" repeatCount="indefinite"></animateTransform>
+                </rect>
+                <rect x="9.00483%" y="14.5733%" width="100%" height="100%" fill="url(#Gradient3)" transform="rotate(139.903 50 50)">
+                    <animate attributeName="x" dur="25s" values="0%;25%;0%" repeatCount="indefinite"></animate>
+                    <animate attributeName="y" dur="12s" values="0%;25%;0%" repeatCount="indefinite"></animate>
+                    <animateTransform attributeName="transform" type="rotate" from="360 50 50" to="0 50 50" dur="9s" repeatCount="indefinite"></animateTransform>
+                </rect>
+            </svg>
+        </div>
+        <div class="container">
+            <div class="license-inner">
+                <h2 class="title text-center">License</h2>
+                <div class="info">
+                    <p>CoreRec and VishGraphs are completely open source projects. We highly support and encourage open source contributions. You are free to use, modify, and distribute the code as long as you adhere to the terms of the open source license.</p>
+                    <p><strong>[Tip for developers]:</strong> If you find this project useful, consider contributing back to the community by submitting bug fixes, feature enhancements, or documentation improvements.</p>
+                </div><!--//info-->
+                <div class="cta-container">
+                    <div class="speech-bubble">                    
+                        <p class="intro">If you want to support the development of these open source projects, you can <a href="https://github.com/vishesh9131/CoreRec" target="_blank">star the repository on GitHub</a>. Thank you for your support!</p>
+                        <div class="icon-holder text-center"><i class="far fa-smile"></i></div>
+                    </div><!--//speech-bubble-->
+                    <div class="btn-container text-center">
+                        <a class="btn btn-cta-secondary" href="https://github.com/vishesh9131/CoreRec" target="_blank">Star on GitHub</a>                   
+                        <!-- <a class="btn btn-cta-primary" href="https://www.paypal.com/donate?hosted_button_id=XXXXXX" target="_blank">Donate</a> -->
+                    </div><!--//btn-container-->
+                </div><!--//cta-container-->
+            </div><!--//license-inner-->
+        </div><!--//container-->
+    </section><!--//license-->
+    
+    <!-- ******CONTACT****** --> 
+    <section id="contact" class="contact section has-pattern">
+        <div class="container">
+            <div class="contact-inner">
+                <h2 class="title text-center">Contact</h2>
+                <p class="intro text-center">Discover the power of graph analysis and recommendation with CoreRec & VishGraphs. Dive into our comprehensive manual and explore the endless possibilities. <br />Feel free to get in touch if you have any questions or suggestions.</p>
+                <div class="author-message">                      
+                    <div class="profile">
+                        <img class="img-fluid" src="assets/images/profile.png" alt="Profile Image" />
+                    </div><!--//profile-->
+                    <div class="speech-bubble">
+                        <h3 class="sub-title">Wanna Contribute?</h3>
+                        <p>We welcome contributions to enhance the functionalities of our graph analysis and recommendation tools. Here are a few ways you can help:</p>
+                        <ul>
+                            <li><strong>Bug Fixes:</strong> Identify and fix bugs in the existing code.</li>
+                            <li><strong>Feature Enhancements:</strong> Suggest and implement improvements to current features.</li>
+                            <li><strong>New Features:</strong> Propose and develop new features that could benefit users of the libraries.</li>
+                            <li><strong>Documentation:</strong> Help improve the documentation to make the libraries more user-friendly.</li>
+                        </ul>
+                        <p>To contribute, please follow these steps:</p>
+                        <ol>
+                            <li>Fork the repository.</li>
+                            <li>Create a new branch for your feature or fix.</li>
+                            <li>Develop your changes while adhering to the coding standards and guidelines.</li>
+                            <li>Submit a pull request with a clear description of the changes and any relevant issue numbers.</li>
+                        </ol>
+                        <p>Your contributions are greatly appreciated and will help make these tools more effective and accessible to everyone!</p>
+                        <div class="source">
+                            <span class="name"><a href="https://www.linkedin.com/in/vishesh-yadav-aa7333192/" target="_blank">Vishesh Yadav</a></span>
+                            <br />
+                            <span class="title">Project Maintainer</span>
+                        </div><!--//source-->
+                    </div><!--//speech-bubble-->                        
+                </div><!--//author-message-->
+                <div class="info text-center">
+                    <h4 class="sub-title">Get Connected</h4>
+                    <ul class="social-icons list-inline">
+                        <li class="list-inline-item"><a href="https://twitter.com/vishesh_writes" target="_blank"><i class="fab fa-twitter"></i></a></li>
+                        <!-- <li class="list-inline-item"><a href="https://www.facebook.com/vishesh.yadav.98" target="_blank"><i class="fab fa-facebook-f"></i></a></li> -->
+                        <li class="list-inline-item"><a href="https://medium.com/@sciencely98" target="_blank"><i class="fab fa-medium-m"></i></a></li>  
+                        <!-- <li class="list-inline-item"><a href="https://dribbble.com/vishesh_yadav" target="_blank"><i class="fab fa-dribbble"></i></a></li>    -->
+                        <li class="list-inline-item last"><a href="mailto:sciencely98@gmail.com" target="_blank"><i class="fas fa-envelope"></i></a></li>              
+                    </ul>
+                </div><!--//info-->
+            </div><!--//contact-inner-->
+        </div><!--//container-->
+    </section><!--//contact-->  
+      
+    <!-- ******FOOTER****** --> 
+    <footer class="footer">
+        <div class="container text-center">
+            <small class="copyright">Exclusive product <span class="sr-only">powered</span> by <a href="https://github.com/vishesh9131" target="_blank" class="k">Vishesh's Machines</a> for developers</small>
+        </div><!--//container-->
+    </footer><!--//footer-->
+     
+    <!-- Javascript -->          
+    <script src="assets/plugins/bootstrap/js/bootstrap.min.js"></script> 
+    <script src="assets/plugins/prism/prism.js"></script>    
+    <script src="assets/plugins/gumshoe/gumshoe.polyfills.min.js"></script> 
+    <script src="assets/js/main.js"></script>  
+    
+        
+</body>
+</html> 
+
