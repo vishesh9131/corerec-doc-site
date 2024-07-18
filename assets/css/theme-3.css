@@ -143,7 +143,7 @@ pre code {
   padding: 8px 8px;
   right: 10px;
   top: 10px;
-  background: #ffffff;
+  background: #000000;
   -webkit-box-shadow: none;
   -moz-box-shadow: none;
   box-shadow: none;
@@ -183,7 +183,7 @@ pre code {
 }
 
 .header .main-nav .nav .nav-item .nav-link {
-  color: #ffffff;
+  color: #000000;
   -webkit-transition: none;
   -moz-transition: none;
   -ms-transition: none;
@@ -194,9 +194,9 @@ pre code {
 }
 
 .header .main-nav .nav .nav-item .nav-link:hover {
-  color: #ffffff;
-  border-bottom: 1px solid #e0e0e0;
-  background: none;
+  color: #000000;
+  border-bottom: 1px solid #000000;
+  background:#e6e6e6
 }
 
 .header .main-nav .nav .nav-item .nav-link:focus {
