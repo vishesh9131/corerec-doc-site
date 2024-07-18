@@ -116,7 +116,11 @@ pre code {
 .header.navbar-fixed-top .logo {
   color: #ffffff;
 }
-
+.logo-svg {
+  width: 24px; /* Adjust the size as needed */
+  height: 24px; /* Adjust the size as needed */
+  fill: #04ff1d; /* Change the color */
+}
 .header .logo {
   margin: 0;
   font-size: 26px;
