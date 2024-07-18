@@ -616,6 +616,10 @@ p {
   margin: 0 auto;
 }
 
+.info-1{
+  color: #000000;
+}
+
 .license .cta-container {
   max-width: 540px;
   margin: 0 auto;
@@ -632,7 +636,7 @@ p {
 
 .license .cta-container .speech-bubble {
   background: #f2f6f9;
-  color: #2a435c;
+  color: #000000;
   padding: 30px;
   margin-bottom: 30px;
   position: relative;

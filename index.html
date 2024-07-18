@@ -319,35 +319,36 @@ vg.draw_graph_3d(adj_matrix, nodes, top_nodes)
                 <defs>
                     <radialGradient id="Gradient1" cx="50%" cy="50%" fx="0.441602%" fy="50%" r=".5">
                         <animate attributeName="fx" dur="34s" values="0%;3%;0%" repeatCount="indefinite"></animate>
-                        <stop offset="0%" stop-color="rgba(255, 0, 255, 1)"></stop>
-                        <stop offset="100%" stop-color="rgba(255, 0, 255, 0)"></stop>
+                        <stop offset="0%" stop-color="#04ff1d"></stop>
+                        <stop offset="100%" stop-color="#04ff1d00"></stop>
                     </radialGradient>
                     <radialGradient id="Gradient2" cx="50%" cy="50%" fx="2.68147%" fy="50%" r=".5">
                         <animate attributeName="fx" dur="23.5s" values="0%;3%;0%" repeatCount="indefinite"></animate>
-                        <stop offset="0%" stop-color="rgba(255, 255, 0, 1)"></stop>
-                        <stop offset="100%" stop-color="rgba(255, 255, 0, 0)"></stop>
+                        <stop offset="0%" stop-color="#02800fb3"></stop>
+                        <stop offset="100%" stop-color="#02800f00"></stop>
                     </radialGradient>
                     <radialGradient id="Gradient3" cx="50%" cy="50%" fx="0.836536%" fy="50%" r=".5">
                         <animate attributeName="fx" dur="21.5s" values="0%;3%;0%" repeatCount="indefinite"></animate>
-                        <stop offset="0%" stop-color="rgba(0, 255, 255, 1)"></stop>
-                        <stop offset="100%" stop-color="rgba(0, 255, 255, 0)"></stop>
+                        <stop offset="0%" stop-color="#1e1e1e"></stop>
+                        <stop offset="100%" stop-color="#1e1e1e00"></stop>
                     </radialGradient>
                     <radialGradient id="Gradient4" cx="50%" cy="50%" fx="4.56417%" fy="50%" r=".5">
                         <animate attributeName="fx" dur="23s" values="0%;5%;0%" repeatCount="indefinite"></animate>
-                        <stop offset="0%" stop-color="rgba(0, 255, 0, 1)"></stop>
-                        <stop offset="100%" stop-color="rgba(0, 255, 0, 0)"></stop>
+                        <stop offset="0%" stop-color="#014008"></stop>
+                        <stop offset="100%" stop-color="#01400800"></stop>
                     </radialGradient>
                     <radialGradient id="Gradient5" cx="50%" cy="50%" fx="2.65405%" fy="50%" r=".5">
                         <animate attributeName="fx" dur="24.5s" values="0%;5%;0%" repeatCount="indefinite"></animate>
-                        <stop offset="0%" stop-color="rgba(0,0,255, 1)"></stop>
-                        <stop offset="100%" stop-color="rgba(0,0,255, 0)"></stop>
+                        <stop offset="0%" stop-color="#14141480"></stop>
+                        <stop offset="100%" stop-color="#14141400"></stop>
                     </radialGradient>
                     <radialGradient id="Gradient6" cx="50%" cy="50%" fx="0.981338%" fy="50%" r=".5">
                         <animate attributeName="fx" dur="25.5s" values="0%;5%;0%" repeatCount="indefinite"></animate>
-                        <stop offset="0%" stop-color="rgba(255,0,0, 1)"></stop>
-                        <stop offset="100%" stop-color="rgba(255,0,0, 0)"></stop>
+                        <stop offset="0%" stop-color="#000000"></stop>
+                        <stop offset="100%" stop-color="#00000000"></stop>
                     </radialGradient>
                 </defs>
+                <rect x="0" y="0" width="100%" height="100%" fill="#0a0a0a"/>
                 <rect x="13.744%" y="1.18473%" width="100%" height="100%" fill="url(#Gradient1)" transform="rotate(334.41 50 50)">
                     <animate attributeName="x" dur="20s" values="25%;0%;25%" repeatCount="indefinite"></animate>
                     <animate attributeName="y" dur="21s" values="0%;25%;0%" repeatCount="indefinite"></animate>
@@ -363,18 +364,33 @@ vg.draw_graph_3d(adj_matrix, nodes, top_nodes)
                     <animate attributeName="y" dur="12s" values="0%;25%;0%" repeatCount="indefinite"></animate>
                     <animateTransform attributeName="transform" type="rotate" from="360 50 50" to="0 50 50" dur="9s" repeatCount="indefinite"></animateTransform>
                 </rect>
+                <rect x="0" y="0" width="100%" height="100%" fill="url(#Gradient4)" transform="rotate(45 50 50)">
+                    <animate attributeName="x" dur="22s" values="0%;25%;0%" repeatCount="indefinite"></animate>
+                    <animate attributeName="y" dur="14s" values="0%;25%;0%" repeatCount="indefinite"></animate>
+                    <animateTransform attributeName="transform" type="rotate" from="0 50 50" to="360 50 50" dur="11s" repeatCount="indefinite"></animateTransform>
+                </rect>
+                <rect x="0" y="0" width="100%" height="100%" fill="url(#Gradient5)" transform="rotate(90 50 50)">
+                    <animate attributeName="x" dur="26s" values="25%;0%;25%" repeatCount="indefinite"></animate>
+                    <animate attributeName="y" dur="18s" values="25%;0%;25%" repeatCount="indefinite"></animate>
+                    <animateTransform attributeName="transform" type="rotate" from="360 50 50" to="0 50 50" dur="13s" repeatCount="indefinite"></animateTransform>
+                </rect>
+                <rect x="0" y="0" width="100%" height="100%" fill="url(#Gradient6)" transform="rotate(180 50 50)">
+                    <animate attributeName="x" dur="28s" values="0%;25%;0%" repeatCount="indefinite"></animate>
+                    <animate attributeName="y" dur="16s" values="25%;0%;25%" repeatCount="indefinite"></animate>
+                    <animateTransform attributeName="transform" type="rotate" from="0 50 50" to="360 50 50" dur="15s" repeatCount="indefinite"></animateTransform>
+                </rect>
             </svg>
         </div>
         <div class="container">
             <div class="license-inner">
                 <h2 class="title text-center">License</h2>
                 <div class="info">
-                    <p>CoreRec and VishGraphs are completely open source projects. We highly support and encourage open source contributions. You are free to use, modify, and distribute the code as long as you adhere to the terms of the open source license.</p>
-                    <p><strong>[Tip for developers]:</strong> If you find this project useful, consider contributing back to the community by submitting bug fixes, feature enhancements, or documentation improvements.</p>
+                    <p class="text-1">CoreRec and VishGraphs are completely open source projects. We highly support and encourage open source contributions. You are free to use, modify, and distribute the code as long as you adhere to the terms of the open source license.</p>
+                    <p class="text-1"><strong>[Tip for developers]:</strong> If you find this project useful, consider contributing back to the community by submitting bug fixes, feature enhancements, or documentation improvements.</p>
                 </div><!--//info-->
                 <div class="cta-container">
                     <div class="speech-bubble">                    
-                        <p class="intro">If you want to support the development of these open source projects, you can <a href="https://github.com/vishesh9131/CoreRec" target="_blank">star the repository on GitHub</a>. Thank you for your support!</p>
+                        <p class="text-1">If you want to support the development of these open source projects, you can <a href="https://github.com/vishesh9131/CoreRec" target="_blank">star the repository on GitHub</a>. Thank you for your support!</p>
                         <div class="icon-holder text-center"><i class="far fa-smile"></i></div>
                     </div><!--//speech-bubble-->
                     <div class="btn-container text-center">
@@ -391,7 +407,7 @@ vg.draw_graph_3d(adj_matrix, nodes, top_nodes)
         <div class="container">
             <div class="contact-inner">
                 <h2 class="title text-center">Contact</h2>
-                <p class="intro text-center">Discover the power of graph analysis and recommendation with CoreRec & VishGraphs. Dive into our comprehensive manual and explore the endless possibilities. <br />Feel free to get in touch if you have any questions or suggestions.</p>
+                <p class="intro text-center text-1">Discover the power of graph analysis and recommendation with CoreRec & VishGraphs. Dive into our comprehensive manual and explore the endless possibilities. <br />Feel free to get in touch if you have any questions or suggestions.</p>
                 <div class="author-message">                      
                     <div class="profile">
                         <img class="img-fluid" src="assets/images/profile.png" alt="Profile Image" />
