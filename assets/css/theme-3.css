@@ -245,6 +245,71 @@ pre code {
   margin-bottom: 30px;
 }
 
+/* Mobile styles */
+@media (max-width: 767px) {
+  .promo {
+    padding-top: 100px;
+  }
+
+  .promo .title {
+    font-size: 48px;
+    margin-top: 100px;
+  }
+
+  .promo .intro {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+
+  .promo .btns .btn {
+    margin-right: 15px;
+    margin-bottom: 250px;
+    font-size: 18px;
+    padding: 8px 30px;
+  }
+  
+  .promo .meta {
+    margin-top: 120px;
+    margin-bottom: 0px;
+    color: #ffffff;
+  }
+  
+  .promo .meta li {
+    margin-right: 15px;
+    margin-bottom: 150px;
+  }
+  
+  .promo .meta a {
+    color: #ffffff;
+  }
+  
+  .promo .meta a:hover {
+    color: #c2c2c2;
+    /* border-bottom: 1px solid #ffffff; */
+  }
+  .list-inline{
+    padding-top: 300px;
+  }
+  .promo .social-media {
+    background: #04ff1d;
+    padding: 10px 0;
+    margin: 0 auto;
+  }
+
+  .promo .social-media li {
+    margin-top: 15px;
+  }
+
+  .container {
+    margin-bottom: 300px;
+
+  }
+
+
+
+}
+
+
 .promo .btns .btn {
   margin-right: 15px;
   margin-bottom: 250px;
