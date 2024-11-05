@@ -1,0 +1,159 @@
+# Project information
+site_name: Corerec Documentation
+site_url: https://vishesh9131.github.io/corerec-docs/
+site_author: Vishesh Yadav
+site_description: >-
+  corerec is a platform for creating recommendation systems
+# Repository
+# repo_name: squidfunk/mkdocs-material
+# repo_url: https://github.com/squidfunk/mkdocs-material
+
+# Copyright
+copyright: Copyright &copy; 2024 Vishesh Yadav
+
+# Configuration
+theme:
+  name: material
+  features:
+    - announce.dismiss
+    - content.action.edit
+    - content.action.view
+    - content.code.annotate
+    - content.code.copy
+    - content.code.select
+    - content.footnote.tooltips
+    - content.tabs.link
+    - content.tooltips
+    - header.autohide
+    - navigation.expand
+    - navigation.footer
+    - navigation.indexes
+    - navigation.instant
+    - navigation.instant.prefetch
+    - navigation.instant.progress
+    - navigation.prune
+    - navigation.sections
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.top
+    - navigation.tracking
+    - search.highlight
+    - search.share
+    - search.suggest
+    - toc.follow
+    - toc.integrate
+  palette:
+    - media: "(prefers-color-scheme)"
+      toggle:
+        icon: material/link
+        name: Switch to light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/toggle-switch
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: black
+      accent: indigo
+      toggle:
+        icon: material/toggle-switch-off
+        name: Switch to system preference
+plugins:
+  - search
+  - mkdocstrings
+# Additional configuration
+extra:
+  status:
+    new: Recently added
+    deprecated: Deprecated
+  analytics:
+    provider: google
+    property: !ENV GOOGLE_ANALYTICS_KEY
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/vishesh9131
+
+    - icon: fontawesome/brands/x-twitter
+      link: https://x.com/vishesh_writes
+nav:
+  - Home: index.md
+  - Engines: 
+    - Content Filter Engine: 
+      - Content Filter Engine : contentFilterEngine/__init__.md
+      - Context Personalization :
+        - Context Aware : contentFilterEngine/context_personalization/context_aware.md
+        - Item Profiling : contentFilterEngine/context_personalization/item_profiling.md
+        - User Profiling : contentFilterEngine/context_personalization/user_profiling.md
+      - Embedding Representation Learning :
+        - doc2vec : contentFilterEngine/embedding_representation_learning/doc2vec.md
+        - word2vec : contentFilterEngine/embedding_representation_learning/word2vec.md
+        - personalized_embedding : contentFilterEngine/embedding_representation_learning/personalized_embeddings.md
+      - Fairness Explainability :
+        - explainable : contentFilterEngine/fairness_explainability/explainable.md
+        - fairness aware : contentFilterEngine/fairness_explainability/fairness_aware.md
+        - privacy preserving : contentFilterEngine/fairness_explainability/privacy_preserving.md
+      - Graph Based Algorithms :
+        - Semantic Models : contentFilterEngine/graph_based_algorithms/semantic_models.md
+        - Graph Filtering : contentFilterEngine/graph_based_algorithms/graph_filtering.md
+        - GNN : contentFilterEngine/graph_based_algorithms/gnn.md
+      - Hybrid Ensemble Algorithms :
+        - Hybrid Ensemble : contentFilterEngine/hybrid_ensemble_methods/ensemble_methods.md
+        - Attention Mechanisms : contentFilterEngine/hybrid_ensemble_methods/attention_mechanisms.md
+        - Hybrid Collaborative : contentFilterEngine/hybrid_ensemble_methods/hybrid_collaborative.md
+      - Learning Paradigms:
+        - Few Shot Learning : contentFilterEngine/learning_paradigms/few_shot.md
+        - Meta Learning : contentFilterEngine/learning_paradigms/meta_learning.md
+        - Transfer Learning : contentFilterEngine/learning_paradigms/transfer_learning.md
+        - Zero Shot Learning : contentFilterEngine/learning_paradigms/zero_shot.md
+      - Miscellaneous Techniques:
+        - Cold Start : contentFilterEngine/miscellaneous_techniques/cold_start.md
+        - Feature Selection : contentFilterEngine/miscellaneous_techniques/feature_selection.md
+        - Noise Handling : contentFilterEngine/miscellaneous_techniques/noise_handling.md
+      - Multi Modal Cross Domain Methods:
+        - Cross Domain : contentFilterEngine/multi_modal_cross_domain_methods/cross_domain.md
+        - Cross Lingual : contentFilterEngine/multi_modal_cross_domain_methods/cross_lingual.md
+        - Multi Modal : contentFilterEngine/multi_modal_cross_domain_methods/multi_modal.md
+      - Neural Network Architectures Based Methods:
+        - Transformer Based Models : contentFilterEngine/nn_based_algorithms/transformer.md
+        - CNN : contentFilterEngine/nn_based_algorithms/cnn.md
+        - Autoencoder : contentFilterEngine/nn_based_algorithms/autoencoder.md
+        - AITM : contentFilterEngine/nn_based_algorithms/AITM.md
+        - NPA : contentFilterEngine/nn_based_algorithms/npa.md
+        - NAML : contentFilterEngine/nn_based_algorithms/naml.md
+        - LSTUR : contentFilterEngine/nn_based_algorithms/lstur.md
+        - VAE : contentFilterEngine/nn_based_algorithms/vae.md
+        - NRMS : contentFilterEngine/nn_based_algorithms/nrms.md
+        - TDM : contentFilterEngine/nn_based_algorithms/tdm.md
+        - NPA : contentFilterEngine/nn_based_algorithms/npa.md
+        - Wide & Deep : contentFilterEngine/nn_based_algorithms/WideDeep.md
+        - DSSM : contentFilterEngine/nn_based_algorithms/DSSM.md
+        - YouTube DNN : contentFilterEngine/nn_based_algorithms/YouTube_dnn.md
+        - VAE : contentFilterEngine/nn_based_algorithms/vae.md
+      - Other Approaches:
+        - Rule Based : contentFilterEngine/other_approaches/rule_based.md
+        - Sentiment Analysis : contentFilterEngine/other_approaches/sentiment_analysis.md
+        - Ontology Based : contentFilterEngine/other_approaches/ontology_based.md
+      - Performance Scalability:
+        - Feature Extraction : contentFilterEngine/performance_scalability/feature_extraction.md
+        - Load Balancing : contentFilterEngine/performance_scalability/load_balancing.md
+        - Scalable Algorithms : contentFilterEngine/performance_scalability/scalable_algorithms.md
+      - Probabilistic Statistical Methods:
+        - LDA : contentFilterEngine/probabilistic_statistical_methods/lda.md
+        - Fuzzy Logic : contentFilterEngine/probabilistic_statistical_methods/fuzzy_logic.md
+        - Bayesian : contentFilterEngine/probabilistic_statistical_methods/bayesian.md
+      - Special Techniques:
+        - Dynamic Filtering : contentFilterEngine/special_techniques/dynamic_filtering.md
+        - Interactive Filtering : contentFilterEngine/special_techniques/interactive_filtering.md
+        - Temporal Filtering : contentFilterEngine/special_techniques/temporal_filtering.md
+      - Traditional ML Algorithms:
+        - LR : contentFilterEngine/traditional_ml_algorithms/LR.md
+        - Decision Tree : contentFilterEngine/traditional_ml_algorithms/decision_tree.md
+        - LightGBM : contentFilterEngine/traditional_ml_algorithms/lightgbm.md
+        - SVM : contentFilterEngine/traditional_ml_algorithms/svm.md
+        - TFIDF : contentFilterEngine/traditional_ml_algorithms/tfidf.md
+        - VW : contentFilterEngine/traditional_ml_algorithms/vw.md
+    
+      
