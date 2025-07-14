@@ -2,43 +2,6 @@
 <html lang="en">
 
     <head>
-        <script type="application/ld+json">
-            {
-              "@context": "https://schema.org",
-              "@type": "Person",
-              "name": "Vishesh Yadav",
-              "alternateName": "Vishesh",
-              "url": "https://corerec.tech",
-              "image": "https://raw.githubusercontent.com/vishesh9131/corerec-doc-site/main/assets/images/profile.png",
-              "sameAs": [
-                "https://github.com/vishesh9131",
-                "https://twitter.com/visheshwrites",
-                "https://www.linkedin.com/in/vishesh-yadav-aa7333192/",
-                "https://vishesh9131.github.io/git-page-intro/",
-                "https://bhasa-chat.netlify.app"
-              ],
-              "jobTitle": "Founder of CoreRec and Bhasa",
-              "worksFor": {
-                "@type": "Organization",
-                "name": "Bhasa",
-                "url": "https://bhasa-chat.netlify.app"
-              },
-              "birthDate": "2001-06-16",
-              "nationality": {
-                "@type": "Country",
-                "name": "India"
-              },
-              "knowsAbout": [
-                "Artificial Intelligence",
-                "Large Language Models",
-                "Graph Neural Networks",
-                "Recommendation Systems",
-                "State Space Models",
-                "Deep Learning Frameworks"
-              ],
-              "description": "Vishesh Yadav is the founder of CoreRec and Bhasa, working on graph-based recommendation systems and large language models. He is passionate about AI, privacy-focused LLMs, and building developer tools."
-            }
-            </script>
         <title>CoreRec</title>
         <!-- Meta -->
         <meta charset="utf-8">
@@ -97,12 +60,16 @@
 
                     <div class="navbar-collapse collapse" id="navbar-collapse">
                         <ul id="nav-menu" class="nav navbar-nav ms-md-auto">
-                            <li class="nav-item sr-only"><a class="nav-link scrollto" href="#promo">Home</a></li>
+                            <li class="nav-item"><a class="nav-link scrollto" href="#promo">Home</a></li>
                             <li class="nav-item"><a class="nav-link scrollto" href="#about">About</a></li>
                             <li class="nav-item"><a class="nav-link scrollto" href="#features">Features</a></li>
                             <li class="nav-item"><a class="nav-link scrollto" href="#docs">Demo</a></li>
                             <li class="nav-item"><a class="nav-link scrollto" href="#license">License</a></li>
-                            <li class="nav-item last"><a class="nav-link scrollto" href="#contact">Contact</a></li>
+                            <li class="nav-item"><a class="nav-link scrollto" href="#contact">Contact</a></li>
+                            <li class="nav-item"><a class="nav-link" href="opensource.html">Guidelines</a></li>
+                            <li class="nav-item last"><a class="nav-link" href="installation.html">Installation</a></li>
+
+
                         </ul><!--//nav-->
                     </div><!--//navabr-collapse-->
                 </div>
@@ -110,9 +77,12 @@
         </header><!--//header-->
 
         <!-- ******PROMO****** -->
-        <section id="promo" class="promo section offset-header">
+        <section id="promo" class="promo section">
 
             <div class="container text-center">
+                <div class="version-banner">
+                    <a href="https://github.com/vishesh9131/CoreRec/releases/tag/production" target="_blank">▶ Announcing CoreRec v1.1 - 27000+ Downloads</a>
+                </div>
                 <img src="assets/images/coreRec.svg" alt="CoreRec" class="logo-svg"
                     style="width: 220px; height: 220px;">
                 <div id="bg-wrap">
@@ -346,16 +316,65 @@
         <!-- ******FEATURES****** -->
         <section id="features" class="features section">
             <div class="container text-center">
-                <h2 class="title">Features</h2>
-                <ul class="feature-list list-unstyled">
-                    <li><i class="fa-solid fa-check"></i> Intelligent Node recommendation engine</li>
-                    <li><i class="fa-solid fa-check"></i> Customizable Transformer model</li>
-                    <li><i class="fa-solid fa-check"></i> Support Data Parallelism Processing</li>
-                    <li><i class="fa-solid fa-check"></i> PyTorch dataset integration</li>
-                    <li><i class="fa-solid fa-check"></i> 2D-3D Graph visualization</li>
-                    <li><i class="fa-solid fa-check"></i> Cross-platform compatibility</li>
-                    <li><i class="fa-solid fa-check"></i> Accurate recommendation metrics</li>
-                </ul>
+                <h2 class="title">Everything You Need for Next-Gen Recommendations</h2>
+                <p class="intro">A comprehensive suite of tools for researchers and developers.</p>
+                
+                <div class="row">
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="feature-card">
+                            <div class="feature-icon">
+                                <i class="fa-solid fa-brain"></i>
+                            </div>
+                            <h3 class="feature-title">Intelligent Recommendation</h3>
+                            <p class="feature-desc">Sophisticated node recommendation engine powered by advanced graph algorithms.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="feature-card">
+                            <div class="feature-icon">
+                                <i class="fa-solid fa-network-wired"></i>
+                            </div>
+                            <h3 class="feature-title">Customizable Models</h3>
+                            <p class="feature-desc">Build and train bespoke Transformer &amp; GNN models tailored to your specific data.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="feature-card">
+                            <div class="feature-icon">
+                                <i class="fa-solid fa-rocket"></i>
+                            </div>
+                            <h3 class="feature-title">High Performance</h3>
+                            <p class="feature-desc">Optimized for speed with support for Data Parallelism processing for large datasets.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="feature-card">
+                            <div class="feature-icon">
+                                <i class="fa-brands fa-pytorch"></i>
+                            </div>
+                            <h3 class="feature-title">PyTorch Integration</h3>
+                            <p class="feature-desc">Seamlessly integrate your graph data with PyTorch datasets for streamlined workflows.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="feature-card">
+                            <div class="feature-icon">
+                                <i class="fa-solid fa-cubes"></i>
+                            </div>
+                            <h3 class="feature-title">Rich Visualizations</h3>
+                            <p class="feature-desc">Generate insightful 2D and 3D graph visualizations to better understand your data.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="feature-card">
+                            <div class="feature-icon">
+                                <i class="fa-solid fa-check-double"></i>
+                            </div>
+                            <h3 class="feature-title">Accurate Metrics</h3>
+                            <p class="feature-desc">Evaluate your model's performance with a robust suite of recommendation metrics.</p>
+                        </div>
+                    </div>
+                </div>
             </div><!--//container-->
         </section><!--//features-->
 
@@ -363,208 +382,114 @@
         <section id="docs" class="docs section">
             <div class="container">
                 <div class="docs-inner">
-                    <h2 class="title text-center">Get Started</h2>
+                    <h2 class="title text-center">Get Started Quickly</h2>
+                    <p class="intro text-center">Explore the core functionalities of CoreRec with these examples.</p>
+                    
+                    <ul class="nav nav-tabs" id="docs-tabs" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link active" id="basic-tab" data-bs-toggle="tab" data-bs-target="#basic-panel" type="button" role="tab" aria-controls="basic-panel" aria-selected="true">Basic Usage</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="context-tab" data-bs-toggle="tab" data-bs-target="#context-panel" type="button" role="tab" aria-controls="context-panel" aria-selected="false">Context-Aware</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="cnn-tab" data-bs-toggle="tab" data-bs-target="#cnn-panel" type="button" role="tab" aria-controls="cnn-panel" aria-selected="false">CNN Recommender</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="transformer-tab" data-bs-toggle="tab" data-bs-target="#transformer-panel" type="button" role="tab" aria-controls="transformer-panel" aria-selected="false">Transformer &amp; RNN</button>
+                        </li>
+                    </ul>
 
-                    <!-- Example 1: Basic Usage -->
-                    <div class="block">
-                        <h3 class="sub-title text-center">Basic Usage</h3>
-                        <p class="text-1">Learn how to load data and build user interactions with CoreRec.</p>
+                    <div class="tab-content" id="docs-tabs-content">
+                        <div class="tab-pane fade show active" id="basic-panel" role="tabpanel" aria-labelledby="basic-tab">
+                            <h4 class="tab-title">Load Data &amp; Build Interactions</h4>
+                            <p class="tab-desc">A simple example to get you started with loading data and preparing user interactions for analysis.</p>
                         <div class="code-block">
                             <pre><code class="language-python">
 import corerec as cr
 
-def load_data():
+# Load data from specified paths
     users = cr.load_users('data/users.dat')
     ratings = cr.load_ratings('data/ratings.dat')
     movies = cr.load_movies('data/movies.dat')
-    return users, ratings, movies
 
-def build_interactions(ratings):
-    return cr.build_user_interactions(ratings)
-
-if __name__ == "__main__":
-    users, ratings, movies = load_data()
-    user_interactions = build_interactions(ratings)
-    print(user_interactions)
+# Build user-item interaction matrix
+user_interactions = cr.build_user_interactions(ratings)
+print("User interactions created successfully.")
                         </code></pre>
                         </div><!--//code-block-->
-                    </div><!--//block-->
+                        </div><!--//tab-pane-->
 
-                    <!-- Example 2: Context-Aware Recommendations -->
-                    <div class="block">
-                        <h3 class="sub-title text-center">Context-Aware Recommendations</h3>
-                        <p class="text-1">Implement context-aware recommendations using CoreRec's recommendation
-                            engines.</p>
+                        <div class="tab-pane fade" id="context-panel" role="tabpanel" aria-labelledby="context-tab">
+                            <h4 class="tab-title">Context-Aware Recommendations</h4>
+                            <p class="tab-desc">Leverage contextual information like time of day or location to provide highly relevant recommendations.</p>
                         <div class="code-block">
                             <pre><code class="language-python">
 import corerec as cr
-import os
-
-def main():
-    data_path = 'data/'  # Update with your actual data path
-    context_config_path = os.path.join(data_path, 'context_config.json')
     
-    users, ratings, movies = cr.load_data(data_path)
-    user_interactions = cr.build_user_interactions(ratings)
+# Pre-computation of item features
     item_features = cr.build_item_features(movies)
     
-    context_recommender = cr.CON_CONTEXT_AWARE(
-        context_config_path=context_config_path,
+# Initialize and fit the context-aware model
+recommender = cr.CON_CONTEXT_AWARE(
+    context_config_path='data/context_config.json',
         item_features=item_features
     )
-    context_recommender.fit(user_interactions)
-    
-    recommendations = context_recommender.recommend(
-        user_id=1, 
-        context={'time_of_day': 'evening', 'location': 'home'}, 
-        top_n=10
-    )
-    print(recommendations)
+recommender.fit(user_interactions)
 
-if __name__ == "__main__":
-    main()
+# Get recommendations for a specific user and context
+recs = recommender.recommend(user_id=1, context={'time': 'evening'}, top_n=5)
+print(recs)
                         </code></pre>
                         </div><!--//code-block-->
-                    </div><!--//block-->
+                        </div><!--//tab-pane-->
 
-
-                    <!-- Example 3: CNN-Based Recommender -->
-                    <div class="block">
-                        <h3 class="sub-title text-center">CNN-Based Recommender</h3>
-                        <p class="text-1">Implement a CNN-based recommendation system with CoreRec.</p>
+                        <div class="tab-pane fade" id="cnn-panel" role="tabpanel" aria-labelledby="cnn-tab">
+                            <h4 class="tab-title">CNN-Based Recommender</h4>
+                            <p class="tab-desc">Use a Convolutional Neural Network to learn features from item content for recommendations.</p>
                         <div class="code-block">
                             <pre><code class="language-python">
 import torch
 from corerec.cr_utility.dataloader import DataLoader as CRDataLoader
 from corerec.engines.contentFilterEngine.nn_based_algorithms import NN__CNN
 
-class MoviesDataset(Dataset):
-    def __init__(self, file_path):
-        # Initialize dataset
-        pass
-
-    def __len__(self):
-        return len(self.movies)
-
-    def __getitem__(self, idx):
-        # Return genre_vector and title
-        pass
-
-def train_model(model, data_loader, criterion, optimizer, num_epochs, device):
-    model.train()
-    for epoch in range(num_epochs):
-        total_loss = 0
-        for genre_vector, titles in data_loader:
-            genre_vector = genre_vector.to(device)
-            optimizer.zero_grad()
-            outputs = model(genre_vector)
-            loss = criterion(outputs, genre_vector)
-            loss.backward()
-            optimizer.step()
-            total_loss += loss.item()
-        avg_loss = total_loss / len(data_loader)
-        print(f"Epoch {epoch+1}/{num_epochs}, Loss: {avg_loss:.4f}")
-
-if __name__ == "__main__":
+# Assuming a custom PyTorch dataset `MoviesDataset`
     dataset = MoviesDataset(file_path='data/movies.dat')
     dataloader = CRDataLoader(dataset, batch_size=32, shuffle=True)
 
-    model = NN__CNN(input_dim=20, num_classes=5)  # Example dimensions
+# Initialize the model, loss, and optimizer
+model = NN__CNN(input_dim=20, num_classes=5)
     criterion = torch.nn.BCELoss()
     optimizer = torch.optim.Adam(model.parameters(), lr=0.001)
 
+# Training loop
     train_model(model, dataloader, criterion, optimizer, num_epochs=10, device='cpu')
                         </code></pre>
                         </div><!--//code-block-->
-                    </div><!--//block-->
+                        </div><!--//tab-pane-->
 
-                    <!-- Example 5: Transformer and RNN Recommendation Models -->
-                    <div class="block">
-                        <h3 class="sub-title text-center">Transformer and RNN Recommendation Models</h3>
-                        <p class="text-1">Train and evaluate Transformer and RNN models for recommendations using
-                            CoreRec.</p>
+                        <div class="tab-pane fade" id="transformer-panel" role="tabpanel" aria-labelledby="transformer-tab">
+                            <h4 class="tab-title">Transformer &amp; RNN Models</h4>
+                            <p class="tab-desc">Implement state-of-the-art sequence models for powerful session-based recommendations.</p>
                         <div class="code-block">
                             <pre><code class="language-python">
-import torch
-from torch.utils.data import Dataset
-from corerec.cr_utility.dataloader import DataLoader 
-from corerec.engines.contentFilterEngine.nn_based_algorithms import (
-    NN__TransformerModel, NN__RNNModel
-)
+from corerec.engines.contentFilterEngine.nn_based_algorithms import NN__TransformerModel
 
-class MoviesDataset(Dataset):
-    def __init__(self, file_path):
-        self.movies = []
-        self.genre_to_idx = {}
-        self.idx_to_genre = []
-        self._load_data(file_path)
-
-    def _load_data(self, file_path):
-        with open(file_path, 'r', encoding='latin1') as f:
-            for line in f:
-                parts = line.strip().split('::')
-                if len(parts) < 3:
-                    continue
-                movie_id, title, genres = parts
-                genre_list = genres.split('|')
-                self.movies.append((title, genre_list))
-                for genre in genre_list:
-                    if genre not in self.genre_to_idx:
-                        self.genre_to_idx[genre] = len(self.idx_to_genre)
-                        self.idx_to_genre.append(genre)
-
-    def __len__(self):
-        return len(self.movies)
-
-    def __getitem__(self, idx):
-        genre_vector = torch.zeros(len(self.genre_to_idx))
-        for genre in self.movies[idx][1]:
-            genre_vector[self.genre_to_idx[genre]] = 1
-        return genre_vector, self.movies[idx][0]
-
-def train_model(model, data_loader, criterion, optimizer, num_epochs, device):
-    model.train()
-    for epoch in range(num_epochs):
-        total_loss = 0
-        for inputs, labels in data_loader:
-            inputs = inputs.to(device)
-            optimizer.zero_grad()
-            outputs = model(inputs)
-            loss = criterion(outputs, inputs)
-            loss.backward()
-            optimizer.step()
-            total_loss += loss.item()
-        avg_loss = total_loss / len(data_loader)
-        print(f"Epoch {epoch+1}/{num_epochs}, Loss: {avg_loss:.4f}")
-
-if __name__ == "__main__":
+# Assuming a custom PyTorch dataset `MoviesDataset`
     dataset = MoviesDataset(file_path='data/movies.dat')
     dataloader = DataLoader(dataset, batch_size=32, shuffle=True)
 
-    transformer = NN__TransformerModel(input_dim=500, ...)
-    rnn = NN__RNNModel(input_dim=500, ...)
-
+# Initialize Transformer model
+transformer_model = NN__TransformerModel(input_dim=500, nhead=5, num_layers=2)
     criterion = torch.nn.BCELoss()
-    optimizer_t = torch.optim.Adam(transformer.parameters(), lr=0.001)
-    optimizer_r = torch.optim.Adam(rnn.parameters(), lr=0.001)
+optimizer = torch.optim.Adam(transformer_model.parameters(), lr=0.001)
 
-    # Train Transformer
-    train_model(transformer, dataloader, criterion, optimizer_t, num_epochs=5, device='cpu')
-
-    # Train RNN
-    train_model(rnn, dataloader, criterion, optimizer_r, num_epochs=5, device='cpu')
-
-import corerec as cr
-# Additional advanced usage examples
-# Placeholder for more complex scenarios and integrations
-def advanced_feature():
-    pass
-
-if __name__ == "__main__":
-    advanced_feature()
+# Train the model
+train_model(transformer_model, dataloader, criterion, optimizer, num_epochs=5, device='cpu')
                         </code></pre>
                         </div><!--//code-block-->
-                    </div><!--//block-->
+                        </div><!--//tab-pane-->
+                    </div><!--//tab-content-->
                 </div><!--//docs-inner-->
             </div><!--//container-->
         </section><!--//docs-->
@@ -680,63 +605,40 @@ if __name__ == "__main__":
         </section><!--//license-->
 
         <!-- ******CONTACT****** -->
-        <section id="contact" class="contact section has-pattern">
+        <section id="contact" class="contact section">
             <div class="container">
-                <div class="contact-inner">
-                    <h2 class="title text-center">Contact</h2>
-                    <p class="intro text-center text-1">Discover the power of graph analysis and recommendation with
-                        CoreRec & VishGraphs. Dive into our comprehensive manual and explore the endless possibilities.
-                        <br />Feel free to get in touch if you have any questions or suggestions.</p>
-                    <div class="author-message">
-                        <div class="profile">
-                            <img class="img-fluid" src="assets/images/profile.png" alt="Profile Image" />
-                        </div><!--//profile-->
-                        <div class="speech-bubble">
-                            <h3 class="sub-title-1">Wanna Contribute?</h3>
-                            <p class="sub-title-1">We welcome contributions to enhance the functionalities of our graph
-                                analysis and recommendation tools. Here are a few ways you can help:</p>
-                            <ul>
-                                <li><strong>Bug Fixes:</strong> Identify and fix bugs in the existing code.</li>
-                                <li><strong>Feature Enhancements:</strong> Suggest and implement improvements to current
-                                    features.</li>
-                                <li><strong>New Features:</strong> Propose and develop new features that could benefit
-                                    users of the libraries.</li>
-                                <li><strong>Documentation:</strong> Help improve the documentation to make the libraries
-                                    more user-friendly.</li>
-                            </ul>
-                            <p class="sub-title-1">To contribute, please follow these steps:</p>
-                            <ol>
-                                <li>Fork the repository.</li>
-                                <li>Create a new branch for your feature or fix.</li>
-                                <li>Develop your changes while adhering to the coding standards and guidelines.</li>
-                                <li>Submit a pull request with a clear description of the changes and any relevant issue
-                                    numbers.</li>
-                            </ol>
-                            <p class="sub-title-1">Your contributions are greatly appreciated and will help make these
-                                tools more effective and accessible to everyone!</p>
-                            <div class="source">
-                                <span class="name"><a href="https://www.linkedin.com/in/vishesh-yadav-aa7333192/"
-                                        target="_blank">Vishesh Yadav</a></span>
-                                <br />
-                                <span class="title">Project Maintainer</span>
-                            </div><!--//source-->
-                        </div><!--//speech-bubble-->
-                    </div><!--//author-message-->
-                    <div class="info text-center">
-                        <h4 class="sub-title">Get Connected</h4>
-                        <ul class="social-icons list-inline">
-                            <li class="list-inline-item"><a href="https://twitter.com/vishesh_writes" target="_blank"><i
-                                        class="fab fa-twitter"></i></a></li>
-                            <!-- <li class="list-inline-item"><a href="https://www.facebook.com/vishesh.yadav.98" target="_blank"><i class="fab fa-facebook-f"></i></a></li> -->
-                            <li class="list-inline-item"><a href="https://medium.com/@sciencely98" target="_blank"><i
-                                        class="fab fa-medium-m"></i></a></li>
-                            <!-- <li class="list-inline-item"><a href="https://dribbble.com/vishesh_yadav" target="_blank"><i class="fab fa-dribbble"></i></a></li>    -->
-                            <li class="list-inline-item last"><a href="mailto:sciencely98@gmail.com" target="_blank"><i
-                                        class="fas fa-envelope"></i></a></li>
-                        </ul>
-                    </div><!--//info-->
-                </div><!--//contact-inner-->
-            </div><!--//container-->
+                <div class="row">
+                    <div class="col-lg-5 text-center text-lg-start">
+                        <div class="author-hero-image">
+                            <img src="assets/images/profile.png" alt="Vishesh Yadav">
+                        </div>
+                        <h2 class="author-hero-name">Vishesh Yadav</h2>
+                        <p class="author-hero-title">Creator of CoreRec</p>
+                    </div>
+                    <div class="col-lg-6 offset-lg-1">
+                        <div class="contact-form-container">
+                            <h2 class="form-title">Let's Build Together</h2>
+                            <p class="form-intro">
+                                Have a project in mind, a question about CoreRec, or just want to connect? Drop me a line.
+                            </p>
+                            <div class="action-buttons">
+                                <a href="https://github.com/vishesh9131/CoreRec" class="action-btn github" target="_blank">
+                                    <i class="fab fa-github"></i>
+                                    Contribute on GitHub
+                                </a>
+                                <a href="https://twitter.com/vishesh_writes" class="action-btn twitter" target="_blank">
+                                    <i class="fab fa-twitter"></i>
+                                    Message on Twitter
+                                </a>
+                                <a href="mailto:sciencely98@gmail.com" class="action-btn email">
+                                    <i class="fas fa-envelope"></i>
+                                    Send an Email
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section><!--//contact-->
 
         <!-- ******FOOTER****** -->

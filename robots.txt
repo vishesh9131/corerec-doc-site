@@ -1,0 +1,13 @@
+User-agent: *
+Allow: /
+
+# Sitemaps
+Sitemap: https://corerec.tech/sitemap.xml
+Sitemap: https://corerec.tech/site/sitemap.xml
+
+# Allow access to CSS and JS files
+Allow: /assets/
+Allow: /site/assets/
+
+# Crawl delay (optional)
+Crawl-delay: 1 

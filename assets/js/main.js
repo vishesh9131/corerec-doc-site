@@ -31,9 +31,11 @@ function headerAnimation () {
 	    	    
 	} else {
 	    header.classList.remove('navbar-fixed-top');
+        // Ensure header stays clickable at top of page
+        header.style.zIndex = '9999';
 	}
 
-};
+}
 
 
 
@@ -45,24 +47,33 @@ scrollLinks.forEach((scrollLink) => {
 
 	scrollLink.addEventListener('click', (e) => {
 		
-		e.preventDefault();
+		// Only prevent default for anchor links (scrollto), not regular page navigation
+		const href = scrollLink.getAttribute("href");
+		
+		// Check if it's an anchor link (starts with #) or a page link (.html)
+		if (href.startsWith('#')) {
+			e.preventDefault();
 
-		let element = document.querySelector(scrollLink.getAttribute("href"));
-		
-		const yOffset = 70; //page .header height
-		
-		//console.log(yOffset);
-		
-		const y = element.getBoundingClientRect().top + window.pageYOffset - yOffset;
-		
-		window.scrollTo({top: y, behavior: 'smooth'});
-		
-		
-		//Collapse mobile menu after clicking
-		if (pageNavWrapper.classList.contains('show')){
+			let element = document.querySelector(href);
+			
+			if (element) {
+				const yOffset = 70; //page .header height
+				
+				const y = element.getBoundingClientRect().top + window.pageYOffset - yOffset;
+				
+				window.scrollTo({top: y, behavior: 'smooth'});
+			}
+			
+			//Collapse mobile menu after clicking
+			if (pageNavWrapper.classList.contains('show')){
+				pageNavWrapper.classList.remove('show');
+			}
+		}
+		// For .html links, let the browser handle navigation normally
+		// Don't prevent default, just collapse mobile menu if needed
+		else if (pageNavWrapper.classList.contains('show')){
 			pageNavWrapper.classList.remove('show');
 		}
-
 		
     });
 	
